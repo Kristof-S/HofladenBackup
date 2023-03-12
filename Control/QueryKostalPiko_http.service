@@ -1,0 +1,15 @@
+[Unit]
+ Description=QueryKostal
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ User=pi
+ ExecStart=/usr/bin/python /home/pi/Control/QueryKostalPiko_http.py
+ Restart=always
+
+ [Install]
+ WantedBy=multi-user.target
+
+
+

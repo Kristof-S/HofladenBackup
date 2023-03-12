@@ -1,0 +1,4 @@
+create name.service file
+copy file to /lib/systemd/system/
+systemctl enable name
+systemctl start name

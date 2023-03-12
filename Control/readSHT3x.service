@@ -1,0 +1,15 @@
+[Unit]
+ Description=ReadSHT3x
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ User=pi
+ ExecStart=/usr/bin/python /home/pi/Control/readSHT31.py
+ Restart=always
+
+ [Install]
+ WantedBy=multi-user.target
+
+
+
